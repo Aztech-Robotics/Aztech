@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import {Test, Test2} from "./components/Test";
+import {Message} from "./components/Message";
+import {ClickHandler} from "./components/ClickHandler"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Test name="DUI" grupo="411"/>
+      <Test2 name="Noel" grupo="411" />
+      <Test name="Juanito" grupo="Ni te topo juan">
+        <button>WTF bro un boton como prop?</button>
+      </Test>
+      <Test2 name="Camila" grupo="No m acuerdo xd">
+        <h6>Otro children prop</h6>
+      </Test2>
+      <hr />
+      <Message/>
+      <hr />
+      <ClickHandler/> 
     </div>
   );
 }
