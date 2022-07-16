@@ -2,10 +2,19 @@ import "./App.css";
 import "./App.scss"
 import {Test, Test2} from "./components/Test";
 import {Message} from "./components/Message";
-import {ClickHandler} from "./components/ClickHandler"
+import {ClickHandler} from "./components/ClickHandler";
+import { useTranslation } from "react-i18next";
+
 function App() {
+  const { t } = useTranslation();
+
   return (
     <div className="App">
+
+        <p>{t("home:select_theme")}</p>
+
+
+
       <Test name="DUI" grupo="411"/>
       <Test2 name="Noel" grupo="411" />
       <Test name="Juanito" grupo="Ni te topo juan">
