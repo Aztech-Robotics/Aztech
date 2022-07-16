@@ -1,4 +1,5 @@
 import "./App.css";
+import "./App.scss"
 import {Test, Test2} from "./components/Test";
 import {Message} from "./components/Message";
 import {ClickHandler} from "./components/ClickHandler"
